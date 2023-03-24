@@ -31,7 +31,7 @@ namespace ETicaretAPI.Persistance.Repositories
 
 
         public async Task<T> GetByIdAsync(string id) => //Table.FirstOrDefaultAsync(data => data.Id == Guid.Parse(id));
-                                                        await Table.FindAsync(id);
+                                                        await Table.FindAsync(Guid.Parse(id));
 
 
     }
