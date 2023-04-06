@@ -38,6 +38,8 @@ namespace ETicaretAPI.Persistance.Context
                                 entityReference.UpdatedDate = DateTime.Now;
                                 break;
                             }
+
+                        default:break;
                     }
                 }
             }
