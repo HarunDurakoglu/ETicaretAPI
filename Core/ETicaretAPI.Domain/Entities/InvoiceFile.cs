@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace ETicaretAPI.Domain.Entities
 {
-    public class createproduct
+    public class InvoiceFile : File
     {
-        public string Name { get; set; }
-        public int Stock { get; set; }
-        public float Price { get; set; }
+
     }
 }

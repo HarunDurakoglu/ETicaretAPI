@@ -17,7 +17,6 @@ namespace ETicaretAPI.Persistance
                 configurationManager.SetBasePath(Path.Combine(Directory.GetCurrentDirectory(), "../../Presentation/ETicaretAPI"));
                 configurationManager.AddJsonFile("appsettings.json");
                 return configurationManager.GetConnectionString("PostgreSQL");
-#pragma warning restore CS8603 // Possible null reference return.
             }
         }
     }
