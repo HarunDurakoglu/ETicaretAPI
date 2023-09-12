@@ -1,13 +1,8 @@
 ﻿using ETicaretAPI.Application.Features.Commands.CreateProduct;
 using ETicaretAPI.Application.Features.Queries.GetAllProduct;
 using ETicaretAPI.Application.Repositories;
-using ETicaretAPI.Application.RequestParameters;
-using ETicaretAPI.Domain.Entities;
 using MediatR;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using System.Drawing;
-using System.Net;
 
 namespace ETicaretAPI.Controllers
 {
