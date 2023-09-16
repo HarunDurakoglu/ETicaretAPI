@@ -19,7 +19,7 @@ namespace ETicaretAPI.Infrastructure.Identity.Service
 
         public async Task<User> GetUserAsync(string username)
         {
-            return await _userManager.FindByNameAsync(username);
+            return await _userManager.FindByEmailAsync(username);
         }
 
         public async Task<bool> ChangePasswordAsync(string username, string currentPassword, string newPassword)

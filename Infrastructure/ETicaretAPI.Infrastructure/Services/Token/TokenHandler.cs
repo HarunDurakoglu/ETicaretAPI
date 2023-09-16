@@ -25,6 +25,7 @@ namespace ETicaretAPI.Infrastructure.Services.Token
             //Security Key simetriğini al
             SymmetricSecurityKey securityKey = new(Encoding.UTF8.GetBytes(_configuration["Token:SecurityKey"]));
 
+
             //şifrelenmiş kimliği oluştur
             SigningCredentials signingCredentials = new(securityKey, SecurityAlgorithms.HmacSha256);
 
